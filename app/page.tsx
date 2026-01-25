@@ -4,6 +4,7 @@ import Partners from "@/components/HomePage/Partners/Partners";
 import Testimonials from "@/components/HomePage/Testimonials/Testimonials";
 import Hero from "@/components/HomePage/Hero/Hero";
 
+
 export default function Home() {
   return (
     <main className="w-full overflow-x-hidden">

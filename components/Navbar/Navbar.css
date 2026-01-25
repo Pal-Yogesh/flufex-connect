@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Mona+Sans:wght@400;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Anton&family=Mona+Sans:wght@400;600&display=swap"); */
 
 /* * {
   margin: 0;
@@ -11,7 +11,7 @@ a {
   color: inherit;
 }
 
-body {
+/* body {
   font-family: "Mona Sans", sans-serif;
   color: rgba(255, 255, 255, 0.85);
   font-size: 18px;
@@ -19,7 +19,7 @@ body {
   line-height: 23px;
   letter-spacing: -0.36px;
   overflow-x: hidden;
-}
+} */
 
 .container {
   position: relative;
