@@ -195,7 +195,9 @@ export default function Navbar({}: NavbarProps) {
   };
 
   return (
-    <div className="container">
+    <div className="container"
+    style={{ fontFamily: 'var(--font-bricolage-grotesque)' }}
+    >
       {/* Menu Overlay */}
       <div className="menu-overlay" ref={menuOverlayRef}>
         <div className="menu-overlay__bg-container" aria-hidden="true">
@@ -254,10 +256,10 @@ export default function Navbar({}: NavbarProps) {
                   <a href="/" data-text-anim>ABOUT US</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>EXPLORE TRIPS</a>
+                  <a href="/" data-text-anim>SERVICES</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>SERVICES</a>
+                  <a href="/" data-text-anim>PARTNERS</a>
                 </li>
                 <li>
                   <a href="/" data-text-anim>CONTACT US</a>
@@ -298,9 +300,9 @@ export default function Navbar({}: NavbarProps) {
               <span className="toggle-line-bottom"></span>
             </div>
             <a href="#" className="navbar__btn btn">
-              <span className="btn-txt">EXPLORE TRIPS</span>
+              <span className="btn-txt">GET STARTED</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" fill="none">
-                <path fill="#2F2411" d="m17.76 6.857-5.727-5.688a.821.821 0 0 0-1.147.01.81.81 0 0 0-.01 1.139l4.33 4.3H.819a.821.821 0 0 0-.578.238.81.81 0 0 0 .578 1.388h14.389l-4.33 4.3a.813.813 0 0 0-.19.892.813.813 0 0 0 .765.505.824.824 0 0 0 .581-.248l5.727-5.688a.81.81 0 0 0 0-1.148Z" />
+                <path fill="#FFFFFF" d="m17.76 6.857-5.727-5.688a.821.821 0 0 0-1.147.01.81.81 0 0 0-.01 1.139l4.33 4.3H.819a.821.821 0 0 0-.578.238.81.81 0 0 0 .578 1.388h14.389l-4.33 4.3a.813.813 0 0 0-.19.892.813.813 0 0 0 .765.505.824.824 0 0 0 .581-.248l5.727-5.688a.81.81 0 0 0 0-1.148Z" />
               </svg>
             </a>
           </div>
