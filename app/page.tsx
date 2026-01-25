@@ -7,7 +7,8 @@ import Hero from "@/components/HomePage/Hero/Hero";
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden">
+    <main className="w-full"
+    style={{ fontFamily: 'var(--font-bricolage-grotesque)' }}>
       <Hero />
       <Services />
       <Collabs />

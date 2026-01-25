@@ -335,7 +335,7 @@ const Hero = () => {
 
     return (
         <div>
-            <section className="bg-[url(/herobg.svg)] bg-cover bg-center w-full bg-[#1A1A1A] pt-20 pb-20 overflow-hidden">
+            <section className="bg-[url(/herobg.svg)] bg-cover bg-center w-full bg-[#1A1A1A] pt-20 pb-10 overflow-hidden">
 
                 <motion.div
                     className='flex items-center gap-4'
@@ -346,7 +346,7 @@ const Hero = () => {
 
                     <motion.div className='w-[70%] pl-[5%]' variants={textVariants}>
 
-                        <div style={{ fontFamily: 'var(--font-bricolage-grotesque)' }}>
+                        <div>
                             <motion.div
                                 className='text-[75px] font-semibold leading-tight'
                                 initial={{ opacity: 0, y: 30 }}
@@ -482,16 +482,13 @@ const Hero = () => {
                         </motion.button>
                     </motion.div>
                 </div>
-            </section>
 
-
-
-            {/* brand section */}
+                  {/* brand section */}
 
 
 
             <div className='px-[5%] py-8'>
-                <div className='border border-[#BD3900] rounded-[77px] w-full h-[133px] overflow-hidden relative'>
+                <div className='border border-[#BD3900] rounded-full w-full h-[125px] overflow-hidden relative'>
                     <Marquee className='h-full'>
                         <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
                             <p className='text-[20px] text-[#FF4D01]'>Brand 1</p>
@@ -517,6 +514,11 @@ const Hero = () => {
                     </Marquee>
                 </div>
             </div>
+            </section>
+
+
+
+          
 
             <style jsx>{`
                 .perspective-container {
