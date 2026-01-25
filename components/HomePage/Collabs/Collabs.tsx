@@ -1,20 +1,111 @@
 'use client';
 
-import React from 'react';
-import Image from 'next/image';
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
+import { gsap } from "gsap";
+
+const collabData = [
+  {
+    id: 1,
+    img: "/apple.svg",
+  },
+  {
+    id: 2,
+    img: "/apple.svg",
+  },
+  {
+    id: 3,
+    img: "/apple.svg",
+  },
+  {
+    id: 4,
+    img: "/apple.svg",
+  },
+  {
+    id: 5,
+    img: "/apple.svg",
+  },
+  {
+    id: 6,
+    img: "/apple.svg",
+  },
+];
 
 const stats = [
   {
     value: '3000+',
-    label: 'creators endorsed',
+    label: 'content delivered to entertainment',
     highlighted: false
   },
   {
     value: '120+',
-    label: 'successful campaigns',
+    label: 'creators managed and scaled',
     highlighted: true
   }
 ];
+
+// Marquee Component
+const CollabsMarquee = ({ children, className }: { children: React.ReactNode; className?: string }) => {
+  const marqueeRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!marqueeRef.current) return;
+
+    const marquee = marqueeRef.current;
+    const content = marquee.querySelector('.marquee-content') as HTMLElement;
+    if (!content) return;
+
+    // Get the width of just the first set (not the duplicate)
+    const firstSet = content.querySelector('.marquee-set-1') as HTMLElement;
+    if (!firstSet) return;
+    
+    const contentWidth = firstSet.offsetWidth;
+
+    // Enable hardware acceleration and crisp rendering
+    gsap.set(content, {
+      force3D: true,
+      willChange: 'transform',
+      x: 0
+    });
+
+    // Create GSAP animation with hardware acceleration
+    const tl = gsap.to(content, {
+      x: -contentWidth,
+      duration: 8,
+      ease: 'none',
+      repeat: -1,
+      force3D: true
+    });
+
+    return () => {
+      tl.kill();
+    };
+  }, []);
+
+  return (
+    <div ref={marqueeRef} className={`relative overflow-hidden ${className}`}>
+      {/* Left shadow */}
+      <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#1A1A1A] to-transparent z-10 pointer-events-none" />
+      {/* Right shadow */}
+      <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#1A1A1A] to-transparent z-10 pointer-events-none" />
+
+      <div
+        className="flex marquee-content whitespace-nowrap"
+        style={{
+          willChange: 'transform',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden'
+        }}
+      >
+        {/* First set of collabs */}
+        <div className="flex items-center gap-6 marquee-set-1">
+          {children}
+        </div>
+      
+      </div>
+    </div>
+  );
+};
 
 const Collabs = () => {
   return (
@@ -22,49 +113,70 @@ const Collabs = () => {
       <div className="max-w-[1400px] mx-auto">
         {/* Section Label */}
         <div className="mb-8">
-          <div className="inline-flex items-center gap-2 bg-[#FF6E1F]/20 text-[#FF6E1F] px-5 py-2.5 rounded-full text-sm font-medium border border-[#FF6E1F]/30">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 4L8 2L14 4V8L8 14L2 8V4Z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-            </svg>
-            Collabs
+          <div
+            className=''
+          >
+
+            <div style={{
+              background: "linear-gradient(96.81deg, #000000 25.59%, #843700 152.58%)",
+
+            }} className="border border-[#8C3A00] inline-flex items-center gap-2 bg-[#FF6E1F]/20 text-[#FF4D01] px-6 py-2.5 rounded-full  text-[24px] font-semibold">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 4L8 2L14 4V8L8 14L2 8V4Z" stroke="currentColor" strokeWidth="1.5" fill="none" />
+              </svg>
+              Collabs
+            </div>
           </div>
         </div>
 
-        {/* Section Title */}
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-20">
-          <span className="text-white">Endorsed by the </span>
-          <span className="text-[#FF6E1F]">Industry&apos;s Finest.</span>
-        </h2>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="flex justify-between ">
+
+          {/* Section Title */}
+          <h2 className="text-[75px] font-bold mb-20 w-[40%] leading-tight">
+            <span className="text-white">Endorsed by the </span>
+            <span className="text-[#FF4D01]">Industry&apos;s Finest.</span>
+          </h2>
+
+          {/* Marquee on the right side - 50% width */}
+          <div className="w-[50%] h-[300px] relative">
+            <CollabsMarquee className="h-full">
+              {collabData.map((collab, index) => (
+                <div
+                  key={collab.id}
+                  className="shrink-0 flex items-center justify-center"
+                >
+                  <Image
+                    src={collab.img}
+                    alt={`Collab ${collab.id.toString()}`}
+                    width={300}
+                    height={300}
+                    className="w-[300px] h-[300px] object-contain"
+                    quality={100}
+                  />
+                </div>
+              ))}
+            </CollabsMarquee>
+          </div>
+        </div>
+
+        <div className="flex justify-between gap-16 items-start">
           {/* Stats Cards */}
-          <div className="space-y-6">
+          <div className="flex gap-5 ">
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className={`p-10 rounded-xl ${
-                  stat.highlighted
-                    ? 'bg-[#FF6E1F] text-white shadow-xl shadow-[#FF6E1F]/20'
-                    : 'bg-[#2A2A2A] text-white border border-gray-700/30'
-                }`}
+                className={`w-[35%] p-5 ${stat.highlighted
+                  ? 'bg-[#FF6E1F] text-white shadow-xl shadow-[#FF6E1F]/20 rounded-bl-[37px] rounded-tr-[37px]'
+                  : 'bg-white text-[#373737] border border-gray-700/30 rounded-tr-[37px] rounded-bl-[37px]'
+                  }`}
               >
-                <div className="text-6xl md:text-7xl font-bold mb-3 leading-none">{stat.value}</div>
-                <div className="text-lg md:text-xl text-gray-200">{stat.label}</div>
+                <div className="text-[40px] font-semibold mb-3 leading-none">{stat.value}</div>
+                <div className={`text-[20px] ${stat.highlighted ? 'text-white' : 'text-[#373737]'}`}>{stat.label}</div>
               </div>
             ))}
           </div>
 
-          {/* Brand Logos */}
-          <div className="grid grid-cols-2 gap-6">
-            <div className="bg-[#FF6E1F] p-10 rounded-xl flex flex-col items-center justify-center min-h-[220px] shadow-xl shadow-[#FF6E1F]/20">
-              <div className="text-5xl mb-4">🍎</div>
-              <div className="text-white font-semibold text-xl">Apple inc.</div>
-            </div>
-            <div className="bg-white p-10 rounded-xl flex flex-col items-center justify-center min-h-[220px] shadow-lg">
-              <div className="text-4xl font-bold text-red-500 mb-2">zomato</div>
-              <div className="text-gray-600 text-sm">Food Delivery</div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
