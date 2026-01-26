@@ -1,0 +1,63 @@
+.mdwRotatingImageEffect {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .mdwRotatingImages {
+    perspective: 1000px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+  }
+  
+  .mdwRotatingImages img {
+    width: 90px;
+    height: 130px;
+    border: 1px solid #ddd;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .mdwRotatingImageContent {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    opacity: 0;
+  }
+  
+  .mdwRotatingImageContent h1 {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .mdwRotatingImageContent h1 span {
+    color: #007bff;
+  }
+  
+  .init .mdwRotatingImages,
+  .init .mdwRotatingImageContent {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .mdwRotatingImages img {
+      width: 60px;
+      height: 80px;
+    }
+    .mdwRotatingImageContent {
+      width: 50%;
+    }
+  }
