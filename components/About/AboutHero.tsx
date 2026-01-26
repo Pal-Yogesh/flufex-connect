@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import { gsap } from 'gsap'
 import Image from 'next/image';
 
-const Flower = () => (
+export const Flower = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2C12 2 9 5 9 8C9 9.66 10.34 11 12 11C13.66 11 15 9.66 15 8C15 5 12 2 12 2Z" fill="white" />
         <path d="M12 13C12 13 9 16 9 19C9 20.66 10.34 22 12 22C13.66 22 15 20.66 15 19C15 16 12 13 12 13Z" fill="white" />
@@ -254,13 +254,12 @@ const AboutHero = () => {
 
 
 
-            {/* Statistics Section */}
             <motion.div
                 ref={statsRef}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="mb-16 md:mb-24  "
+                className="mb-12 "
             >
                 <div className="bg-[url(/herobg.svg)] bg-cover bg-center backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#BD3900] mx-16">
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
