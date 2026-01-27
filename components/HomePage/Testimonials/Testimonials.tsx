@@ -198,7 +198,7 @@ const Testimonial = () => {
         {/* Section Label */}
 
         {/* Section Title */}
-        <h2 className="text-[75px] font-bold mb-5 leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[75px] font-bold mb-5 leading-tight">
           <span className="text-[#FF6A2A]">Voices </span>
           <span className="text-[#000000]">from Our Network</span>
         </h2>

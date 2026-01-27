@@ -335,20 +335,20 @@ const Hero = () => {
 
     return (
         <div>
-            <section className="bg-[url(/herobg.svg)] bg-cover bg-center w-full bg-[#1A1A1A] pt-20 pb-10 overflow-hidden">
+            <section className="bg-[url(/herobg.svg)] bg-cover bg-center w-full bg-[#1A1A1A] pt-24 sm:pt-28 md:pt-32 lg:pt-20 pb-8 sm:pb-10 overflow-hidden">
 
                 <motion.div
-                    className='flex items-center gap-4'
+                    className='flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-4'
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}
                 >
 
-                    <motion.div className='w-[70%] pl-[5%]' variants={textVariants}>
+                    <motion.div className='w-full lg:w-[70%] px-4 sm:px-6 md:px-8 lg:pl-[5%]' variants={textVariants}>
 
                         <div>
                             <motion.div
-                                className='text-[75px] font-semibold leading-tight'
+                                className='text-3xl sm:text-4xl md:text-5xl lg:text-[75px] font-semibold leading-tight text-center lg:text-left'
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -381,14 +381,14 @@ const Hero = () => {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.8, duration: 0.6 }}
-                                className=' pt-8 text-[25px] text-[#D7C9C3]'
+                                className='pt-4 sm:pt-6 lg:pt-8 text-sm sm:text-base md:text-lg lg:text-[25px] text-[#D7C9C3] text-center lg:text-left'
                             >
                                 Empowering creators with <span className='text-white'>structure, strategy, and scale</span>. We build long-term creator businesses, not just campaigns. Because influence deserves enterprise-level growth.
                             </motion.p>
                         </div>
                     </motion.div>
 
-                    <div className='perspective-container'>
+                    <div className='perspective-container hidden lg:block'>
 
                         <div className='flex items-center'>
 
@@ -451,29 +451,74 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Mobile/Tablet Simplified Image Grid */}
+                    <div className='lg:hidden grid grid-cols-2 gap-3 sm:gap-4 px-4 sm:px-6 md:px-8 w-full max-w-2xl mx-auto'>
+                        <div className='rounded-lg overflow-hidden'>
+                            <Image
+                                src="/hero/Rectangle 30.svg"
+                                alt="Creator"
+                                width={1000}
+                                height={1000}
+                                className="w-full h-[150px] sm:h-[180px] md:h-[220px] object-cover"
+                                priority
+                            />
+                        </div>
+                        <div className='rounded-lg overflow-hidden'>
+                            <Image
+                                src="/hero/Rectangle 29.svg"
+                                alt="Creator"
+                                width={1000}
+                                height={1000}
+                                className="w-full h-[150px] sm:h-[180px] md:h-[220px] object-cover"
+                                priority
+                            />
+                        </div>
+                        <div className='rounded-lg overflow-hidden'>
+                            <Image
+                                src="/hero/Rectangle 26.svg"
+                                alt="Creator"
+                                width={1000}
+                                height={1000}
+                                className="w-full h-[150px] sm:h-[180px] md:h-[220px] object-cover"
+                                priority
+                            />
+                        </div>
+                        <div className='rounded-lg overflow-hidden'>
+                            <Image
+                                src="/hero/Rectangle 28.svg"
+                                alt="Creator"
+                                width={1000}
+                                height={1000}
+                                className="w-full h-[150px] sm:h-[180px] md:h-[220px] object-cover"
+                                priority
+                            />
+                        </div>
+                    </div>
                 </motion.div>
 
-                <div className='pl-[5%]'>
+                <div className='px-4 sm:px-6 md:px-8 lg:pl-[5%] flex justify-center lg:justify-start'>
 
                     <motion.div
-                        className="flex items-center gap-4 "
+                        className="flex items-center gap-4"
                         initial="hidden"
                         animate="visible"
                         variants={containerVariants}
                     >
                         <motion.button
-                            className="bg-[#FF4D00] text-white px-10 py-4 border border-[#FFFFFF] rounded-[63px] font-semibold text[20px] transition-colors shadow-lg shadow-[#FF6E1F]/20 flex items-center gap-3"
+                            className="bg-[#FF4D00] text-white px-6 sm:px-8 lg:px-10 py-3 mt-10 sm:mt-0 sm:py-3.5 lg:py-4 border border-[#FFFFFF] rounded-[63px] font-semibold text-sm sm:text-base lg:text-[20px] transition-colors shadow-lg shadow-[#FF6E1F]/20 flex items-center gap-2 sm:gap-3"
                             variants={buttonVariants}
                             whileHover="hover"
                             whileTap="tap"
                         >
                             SEE FOR YOURSELF
                             <motion.svg
-                                width="24"
-                                height="24"
+                                width="20"
+                                height="20"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
+                                className="sm:w-6 sm:h-6"
                                 animate={{ x: [0, 5, 0] }}
                                 transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
                             >
@@ -487,29 +532,29 @@ const Hero = () => {
 
 
 
-            <div className='px-[5%] py-8'>
-                <div className='border border-[#BD3900] rounded-full w-full h-[125px] overflow-hidden relative'>
+            <div className='px-4 sm:px-6 md:px-8 lg:px-[5%] py-6 sm:py-8'>
+                <div className='border border-[#BD3900] rounded-full w-full h-[80px] sm:h-[100px] lg:h-[125px] overflow-hidden relative'>
                     <Marquee className='h-full'>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 1</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 1</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 2</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 2</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 3</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 3</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 4</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 4</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 5</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 5</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 6</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 6</p>
                         </div>
-                        <div className='w-[269px] h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
-                            <p className='text-[20px] text-[#FF4D01]'>Brand 7</p>
+                        <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
+                            <p className='text-sm sm:text-base lg:text-[20px] text-[#FF4D01]'>Brand 7</p>
                         </div>
                     </Marquee>
                 </div>

@@ -82,7 +82,7 @@ export default function Footer() {
                 © {new Date().getFullYear()} BRIDGEIT MARKETING PVT. LTD. All rights reserved.
               </div>
             </div>
-            <div className="text-xs text-muted-foreground">MCA Registered</div>
+            <div className="text-xs text-muted-foreground hidden lg:block">MCA Registered</div>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 0.05 }}
             transition={{ duration: 1 }}
-            className="text-[8rem] md:text-[12rem] lg:text-[16rem] font-bold  whitespace-nowrap select-none"
+            className="text-[6rem] md:text-[12rem] lg:text-[16rem] font-bold  whitespace-nowrap select-none"
           >
             FLUFEX
           </motion.div>

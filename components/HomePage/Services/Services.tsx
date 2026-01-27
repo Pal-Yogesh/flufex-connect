@@ -124,7 +124,7 @@ export default function ServicesWheel() {
             <div className="flex items-center justify-between">
               <div className="absolute left-0 h-full w-[300px] z-20" />
 
-              <div className="relative flex items-center py-20">
+              <div className="relative flex items-center pt-16">
                 <div className="relative w-[500px] h-[500px] -ml-40 flex justify-center items-center">
                   {/* Circular border */}
                   <div className="absolute w-full h-full border-2 border-[#FF6E1F]/30 rounded-full backdrop-blur-xl bg-[#1A1A1A]/50" />
@@ -172,10 +172,10 @@ export default function ServicesWheel() {
                 </div>
               </div>
 
-              <div className="w-[60%] flex flex-col gap-[5%] h-[70vh] text-left z-10 pr-12">
+              <div className="w-[60%] flex flex-col gap-[2%] h-[70vh] text-left z-10 pr-12">
                 {/* Header Section */}
                 <div className="text-start">
-                  <div className="space-y-6">
+                  <div className="space-y-2 ">
                     {/* Services Badge */}
                     <div className="flex justify-start">
                       <div className="inline-flex items-center gap-2 bg-[#FF6E1F] text-white px-6 py-2 rounded-full border-2 border-white/20 shadow-2xl text-lg font-semibold">

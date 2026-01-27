@@ -12,7 +12,7 @@ const Partners = () => {
         <div className="bg-black rounded-3xl p-10 md:p-16 border border-gray-700/30">
           {/* Section Title */}
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-[75px] font-bold text-[#FF6A2A] flex items-center gap-3">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[75px] font-bold text-[#FF6A2A] flex items-center gap-3">
               See who we&apos;ve helped
               <svg width="100" height="60" viewBox="0 0 24 24" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

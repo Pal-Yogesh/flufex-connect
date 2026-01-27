@@ -51,10 +51,10 @@ const CountStat = ({ value, start }: { value: string; start: boolean }) => {
     const animated = useCountUp(number, start)
 
     return (
-        <div className="text-[60px] font-bold text-[#ED8224] mb-2">
+        <>
             {animated}
             {suffix}
-        </div>
+        </>
     )
 }
 
@@ -150,14 +150,14 @@ const AboutHero = () => {
         <div>
             <section className="bg-[#1A1A1A] bg-[url(/about/about.svg)] bg-cover bg-center">
 
-                <div className='p-32'>
+                <div className='px-4 py-8 pt-36 sm:pt-0 sm:px-8 sm:py-12 md:px-16 md:py-20 lg:p-32'>
                     <motion.div
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
-                        className="flex justify-start mb-10"
+                        className="flex justify-start mb-6 sm:mb-8 lg:mb-10"
                     >
-                        <div className="inline-flex items-center gap-2 bg-[#FF6E1F] text-white px-6 py-2.5 rounded-full border-2 border-white shadow-2xl text-lg font-semibold">
+                        <div className="inline-flex items-center gap-2 bg-[#FF6E1F] text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-full border-2 border-white shadow-2xl text-base sm:text-lg font-semibold">
                             <Flower />
                             About Us
                         </div>
@@ -168,18 +168,18 @@ const AboutHero = () => {
                         animate="visible"
                         variants={containerVariants}
                     >
-                        <div className="flex  ">
+                        <div className="flex flex-col lg:flex-row gap-6">
                             {/* LEFT CONTENT */}
                             <motion.div
                                 variants={textVariants}
-                                className=" w-[570px] rounded-[16px] h-[445px] p-6"
+                                className="w-full lg:w-[570px] rounded-[16px] min-h-[300px] sm:min-h-[350px] lg:h-[445px] p-4 sm:p-6"
                                 style={{
                                     background:
                                         "linear-gradient(89.3deg, #F16225 0.6%, rgba(125, 45, 11, 0.38) 99.43%)",
                                 }}
                             >
                                 <div
-                                    className="rounded-[14px] p-6"
+                                    className="rounded-[14px] p-4 sm:p-6 h-full flex flex-col justify-center"
                                     style={{
                                         borderWidth: "1px",
                                         borderStyle: "solid",
@@ -188,16 +188,16 @@ const AboutHero = () => {
                                             "linear-gradient(90deg, #FFFFFF 0%, rgba(255,255,255,0.1) 100%)",
                                     }}
                                 >
-                                    <h1 className="text-[72px] font-bold text-white ">
+                                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[72px] font-bold text-white">
                                         About Us
                                     </h1>
 
-                                    <p className="mt-6 text-[22px]  text-[#ECE7E5]">
+                                    <p className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl lg:text-[22px] text-[#ECE7E5]">
                                         We are a scroll-stopping, performance-driven content studio built for the
                                         modern digital world.
                                     </p>
 
-                                    <p className="mt-4 text-[22px]  text-[#ECE7E5]">
+                                    <p className="mt-3 sm:mt-4 text-base sm:text-lg md:text-xl lg:text-[22px] text-[#ECE7E5]">
                                         Our work is designed to grab attention, engage audiences, and deliver
                                         results—without the fluff.
                                     </p>
@@ -205,11 +205,11 @@ const AboutHero = () => {
                             </motion.div>
 
                             {/* RIGHT IMAGE GRID */}
-                            <div className="grid grid-cols-2 ">
+                            <div className="grid grid-cols-2 gap-2 sm:gap-3 lg:gap-0 w-full lg:w-auto">
                                 {/* Top Left */}
                                 <div
                                     ref={(el) => { imagesRef.current[0] = el }}
-                                    className="w-[310px] h-[230px] rounded-[18px] overflow-hidden relative"
+                                    className="w-full sm:w-[180px] md:w-[240px] lg:w-[310px] h-[140px] sm:h-[160px] md:h-[200px] lg:h-[230px] rounded-[12px] sm:rounded-[18px] overflow-hidden relative"
                                 >
                                     <Image
                                         src="/about/1.svg"
@@ -222,7 +222,7 @@ const AboutHero = () => {
                                 {/* Top Right */}
                                 <div
                                     ref={(el) => { imagesRef.current[1] = el }}
-                                    className="w-[310px] h-[230px] rounded-[18px] overflow-hidden relative"
+                                    className="w-full sm:w-[180px] md:w-[240px] lg:w-[310px] h-[140px] sm:h-[160px] md:h-[200px] lg:h-[230px] rounded-[12px] sm:rounded-[18px] overflow-hidden relative"
                                 >
                                     <Image
                                         src="/about/2.svg"
@@ -235,7 +235,7 @@ const AboutHero = () => {
                                 {/* Bottom Wide */}
                                 <div
                                     ref={(el) => { imagesRef.current[2] = el }}
-                                    className="col-span-2 w-[625px] h-[200px] rounded-[18px] overflow-hidden relative"
+                                    className="col-span-2 w-full sm:w-[365px] md:w-[485px] lg:w-[625px] h-[140px] sm:h-[160px] md:h-[180px] lg:h-[200px] rounded-[12px] sm:rounded-[18px] overflow-hidden relative"
                                 >
                                     <Image
                                         src="/about/3.svg"
@@ -259,23 +259,26 @@ const AboutHero = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="mb-12 "
+                className="mb-8 sm:mb-12"
             >
-                <div className="bg-[url(/herobg.svg)] bg-cover bg-center backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-[#BD3900] mx-16">
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-8">
+                <div className="bg-[url(/herobg.svg)] bg-cover bg-center backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12 border border-[#BD3900] mx-4 sm:mx-8 lg:mx-16">
+                    <div className="py-5 grid grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-6 md:gap-8">
                         {stats.map((stat, index) => (
                             <motion.div
                                 key={index}
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 transition={{ delay: index * 0.1 }}
+                                className="text-center sm:text-left"
                             >
                                 <div
-                                    className="w-28 h-2 bg-[#ED8224] mb-3"
+                                    className="w-20 sm:w-24 lg:w-28 h-2 bg-[#ED8224] mb-3 mx-auto sm:mx-0"
                                     style={{ boxShadow: "0px 5px 10px #FFD40040" }}
                                 />
-                                <CountStat value={stat.value} start={startCount} />
-                                <div className="text-[18px] text-white">{stat.label}</div>
+                                <div className="text-4xl sm:text-5xl lg:text-[60px] font-bold text-[#ED8224] mb-2">
+                                    <CountStat value={stat.value} start={startCount} />
+                                </div>
+                                <div className="text-sm sm:text-base lg:text-[18px] text-white">{stat.label}</div>
                             </motion.div>
                         ))}
                     </div>
