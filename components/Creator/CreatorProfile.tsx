@@ -102,7 +102,7 @@ const CreatorProfile = () => {
     }, []);
 
     return (
-        <div className="bg-[#1A1A1A] bg-[url(/about/about.svg)] bg-cover bg-center">
+        <div className="">
 
 
 
@@ -117,7 +117,7 @@ const CreatorProfile = () => {
                     >
                         <div className="inline-flex items-center gap-2 bg-[#FF6E1F] text-white px-4 py-2 sm:px-6 sm:py-2.5 rounded-full border-2 border-white shadow-2xl text-base sm:text-lg font-semibold">
                             <Flower />
-                            Creators
+                            Our Creators
                         </div>
                     </motion.div>
                     <div className="carousel-item">
