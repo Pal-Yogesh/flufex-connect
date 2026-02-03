@@ -1,11 +1,11 @@
 import Contact from '@/components/Contact/Contact'
 
-const page = () => {
+const Page = () => {
   return (
-    <div>
-        <Contact />
+    <div style={{ fontFamily: 'var(--font-bricolage-grotesque)' }}>
+      <Contact />
     </div>
   )
 }
 
-export default page
+export default Page
