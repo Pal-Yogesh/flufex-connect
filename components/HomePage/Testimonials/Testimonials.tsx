@@ -103,11 +103,11 @@ const Testimonials = () => {
           >
             <div className="flex items-center gap-3">
               <div className="h-px w-12 bg-[#FF6E1F]" />
-              <span className="text-[#FF6E1F] text-xs font-black uppercase tracking-[0.3em]">Testimonials</span>
+              <span className="text-[#FF4D01] text-xs font-black uppercase tracking-[0.3em]">Testimonials</span>
             </div>
             
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-white leading-[0.95]">
-              Voices from<br />Our <span className="text-[#FF6E1F]">Network</span>
+            <h2 className="text-5xl md:text-6xl lg:text-[75px]  text-white font-bold">
+              Voices from<br />Our <span className="text-[#FF4D01]">Network</span>
             </h2>
           </motion.div>
 
