@@ -16,7 +16,7 @@ const socialLinks = [
 const footerLinks = [
   {
     title: "Services",
-    links: ["Influencer Marketing", "Talent Management", "End to End Edutainment Content Production"],
+    links: ["Digital Intellectual Properties", "Influencer Marketing", "Talent Management", "End to End Edutainment Content Production"],
   },
   {
     title: "Company",

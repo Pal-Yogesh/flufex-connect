@@ -116,7 +116,7 @@ export default function ServicesWheel() {
   return (
     <>
       {/* Desktop Version */}
-      <div className="hidden lg:block ">
+      <div className="hidden lg:block  pt-20">
     
 
         <div ref={containerRef} className="relative min-h-[270vh] bg-[#1A1A1A]  ">

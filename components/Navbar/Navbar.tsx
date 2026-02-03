@@ -283,7 +283,7 @@ export default function Navbar({}: NavbarProps) {
           <div className="menu-bar">
             <div className="logo-wrapper">
               <Image 
-                src="/logo.JPEG" 
+                src="/logo2.JPEG" 
                 alt="Logo" 
                 width={1000}
                 height={1000}

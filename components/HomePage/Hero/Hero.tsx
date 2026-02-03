@@ -532,7 +532,7 @@ const Hero = () => {
 
 
 
-            <div className='px-4 sm:px-6 md:px-8 lg:px-[5%] py-6 sm:py-8'>
+            {/* <div className='px-4 sm:px-6 md:px-8 lg:px-[5%] py-6 sm:py-8'>
                 <div className='border border-[#BD3900] rounded-full w-full h-[80px] sm:h-[100px] lg:h-[125px] overflow-hidden relative'>
                     <Marquee className='h-full'>
                         <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
@@ -558,7 +558,7 @@ const Hero = () => {
                         </div>
                     </Marquee>
                 </div>
-            </div>
+            </div> */}
             </section>
 
 
