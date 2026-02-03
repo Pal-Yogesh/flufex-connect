@@ -29,7 +29,7 @@ const AboutCreators = () => {
             <div className='px-4 sm:px-8 md:px-16 lg:px-32 mb-16 sm:mb-20 md:mb-24 lg:mb-32 relative'>
                 
 
-                <div className="hidden lg:block absolute -right-28 top-40 animate-spin [animation-duration:4s]">
+                {/* <div className="hidden lg:block absolute -right-28 top-40 animate-spin [animation-duration:4s]">
                     <Image
                         src="/about/icon.svg"
                         alt="icon"
@@ -46,7 +46,7 @@ const AboutCreators = () => {
                         height={1000}
                         className="w-[300px] h-[300px]"
                     />
-                </div>
+                </div> */}
 
 
                 <motion.div

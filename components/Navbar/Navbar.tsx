@@ -253,24 +253,24 @@ export default function Navbar({}: NavbarProps) {
                   <a href="/" data-text-anim>HOME</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>ABOUT US</a>
+                  <a href="/about" data-text-anim>ABOUT US</a>
                 </li>
                 <li>
                   <a href="/" data-text-anim>SERVICES</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>PARTNERS</a>
+                  <a href="/creators" data-text-anim>CREATORS</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>CONTACT US</a>
+                  <a href="/contact" data-text-anim>CONTACT US</a>
                 </li>
               </ul>
             </div>
             <div className="menu-overlay__socials">
               <ul>
-                <li><a href="/">Instagram</a></li>
-                <li><a href="/">TikTok</a></li>
-                <li><a href="/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/flufex_connect">Instagram</a></li>
+                <li><a href="https://www.youtube.com/@flufexconnect">Youtube</a></li>
+                <li><a href="https://www.linkedin.com/company/flufex-connect">LinkedIn</a></li>
               </ul>
             </div>
           </div>

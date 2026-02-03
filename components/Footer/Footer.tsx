@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { LuInstagram, LuLinkedin } from "react-icons/lu"
 
 import Image from "next/image"
+import Link from "next/link"
 
 const socialLinks = [
   { icon: LuInstagram, href: "https://www.instagram.com/flufex_connect/", label: "Instagram" },
@@ -16,11 +17,20 @@ const socialLinks = [
 const footerLinks = [
   {
     title: "Services",
-    links: ["Digital Intellectual Properties", "Influencer Marketing", "Talent Management", "End to End Edutainment Content Production"],
+    links: [
+      { text: "Digital Intellectual Properties", href: "#services" },
+      { text: "Influencer Marketing", href: "#services" },
+      { text: "Talent Management", href: "#services" },
+      { text: "End to End Edutainment Content Production", href: "#services" }
+    ],
   },
   {
     title: "Company",
-    links: ["About Us", "Our Process", "Contact"],
+    links: [
+      { text: "About Us", href: "/about" },
+      { text: "Creators", href: "/creators" },
+      { text: "Contact", href: "/contact" }
+    ],
   },
   // {
   //   title: "Legal",
@@ -63,10 +73,10 @@ export default function Footer() {
               <h4 className="font-semibold text-foreground mb-4">{group.title}</h4>
               <ul className="space-y-3">
                 {group.links.map((link) => (
-                  <li key={link}>
-                    <a href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-                      {link}
-                    </a>
+                  <li key={link.text}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-foreground transition-colors">
+                      {link.text}
+                    </Link>
                   </li>
                 ))}
               </ul>
