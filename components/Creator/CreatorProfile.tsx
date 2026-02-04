@@ -3,6 +3,7 @@ import { Flower } from "../About/AboutHero";
 import "./CreatorProfile.css";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { FiInstagram, FiYoutube } from "react-icons/fi";
 const CreatorProfile = () => {
     const carouselRef = useRef<HTMLDivElement>(null);
     const cursorsRef = useRef<HTMLDivElement[]>([]);
@@ -121,85 +122,245 @@ const CreatorProfile = () => {
                         </div>
                     </motion.div>
                     <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Paris</div>
-                            <div className="num">01</div>
-                            <img src="https://media.istockphoto.com/id/949299844/it/foto/vista-prospettica-dellesterno-delledificio-contemporaneo.jpg?s=612x612&w=0&k=20&c=_DR1aRHuTEV3EYBJo1ZXq1pF4SgwB9EVWQLaBj4sC5g=" />
+                        <div className="carousel-box relative">
+                            <div className="title">Sristy Dutta</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Beauty
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=900&auto=format&fit=crop&q=60" alt="Beauty" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/thesristydutta/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@SristyDutta" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Jaanvi Taneja</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                English
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=900&auto=format&fit=crop&q=60" alt="English" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/jaanvitanejaspeaks/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@jaanvitanejaspeaks" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Busy Owaiss</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Import Export
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=900&auto=format&fit=crop&q=60" alt="Import Export" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/busyowaiss/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@busyowaiss" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Harsh Vira</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Finance
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=900&auto=format&fit=crop&q=60" alt="Finance" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.youtube.com/@harshvira19" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+
+                            <div className="title">Dr. Robin Sharma</div>
+                            {/* <div className="num">01</div> */}
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Ayurveda
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1492552181161-62217fc3076d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXl1cnZlZGF8ZW58MHx8MHx8fDA%3D" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/dr.sharmarobin/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+
+                                <a href="https://www.youtube.com/@DrRobinSharma" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Puneet Nagpal</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Finance
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=900&auto=format&fit=crop&q=60" alt="Finance" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/cfppuneetnagpal/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@cfppuneetnagpal" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Sahil Madaan</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Govt. Exam Preparation
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=900&auto=format&fit=crop&q=60" alt="Education" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/sahilmadaan_educator/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Gig Neuro</div>
+
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                AI
+                            </div>
+
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=900&auto=format&fit=crop&q=60" alt="AI" />
+
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/gigneuro/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@gigneuro" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
                         </div>
                     </div>
 
                     <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Warsaw</div>
-                            <div className="num">02</div>
-                            <img src="https://media.istockphoto.com/id/1150545984/it/foto/palazzo-moderno-di-lusso-con-piscina.jpg?s=612x612&w=0&k=20&c=Pbrai_VGc9tUviMCF1UaBErdS1YGyIVWsD29jzMZwTY=" />
-                        </div>
-                    </div>
+                        <div className="carousel-box relative">
+                            <div className="title">UPSC Study Fuel</div>
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Madrid</div>
-                            <div className="num">03</div>
-                            <img
-                                src="https://media.istockphoto.com/id/1214351345/it/foto/guardando-direttamente-lo-skyline-del-quartiere-finanziario-nel-centro-di-londra-immagine-di.jpg?s=612x612&w=0&k=20&c=oNNbPzPvcQ-4RA6AeatNIxHQIafBiXmDRtUUY0Ska-I="
-                            />
-                        </div>
-                    </div>
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                UPSC
+                            </div>
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Sydney</div>
-                            <div className="num">04</div>
-                            <img src="https://media.istockphoto.com/id/904390980/it/foto/foto-di-architettura-contemporanea-astratta.jpg?s=612x612&w=0&k=20&c=_P4Wmx5nq5MeDuimpNklKCBlrLovmCyd9lfiMKeJZDs=" />
-                        </div>
-                    </div>
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=900&auto=format&fit=crop&q=60" alt="UPSC" />
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Istanbul</div>
-                            <div className="num">05</div>
-                            <img src="https://media.istockphoto.com/id/130408311/it/foto/piscina-allesterno-della-casa-moderna-al-crepuscolo.jpg?s=612x612&w=0&k=20&c=ZoVjx7uDjoHKmpM1ayW6UR1SQOoYh_xx-QMG_qeOYs0=" />
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/upscstudyfuel/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <div className="carousel-item">
+                        <div className="carousel-box relative">
+                            <div className="title">Mandala Arts</div>
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Prague</div>
-                            <div className="num">06</div>
-                            <img src="https://media.istockphoto.com/id/1299954175/it/foto/villa-cubica-moderna.jpg?s=612x612&w=0&k=20&c=DhGhb3c1E3DW_fbrWJ_R_Zh0Lbwu6syFeRLsKlZ9no8=" />
-                        </div>
-                    </div>
+                            {/* Category Tag */}
+                            <div className="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm">
+                                Mandala Arts
+                            </div>
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Munich</div>
-                            <div className="num">07</div>
-                            <img src="https://media.istockphoto.com/id/926689776/it/foto/vista-ad-angolo-basso-dei-grattacieli-di-new-york.jpg?s=612x612&w=0&k=20&c=DmEB0Ty7ZwDnBoU5SuA8FNevOp4G1UcECw5aS4vA9A8=" />
-                        </div>
-                    </div>
+                            {/* Image related to category */}
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=400&fit=crop" alt="mandala arts" />
 
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Venice</div>
-                            <div className="num">08</div>
-                            <img src="https://media.istockphoto.com/id/1191376167/it/foto/villa-dellisola.jpg?s=612x612&w=0&k=20&c=PKslWo4FdbjinohKQlK_oWL34jqAsnzMTdy2bxEAf-I=" />
+                            {/* Social Icons */}
+                            <div className="absolute top-4 left-4 flex gap-3 p-2 rounded-lg z-10">
+                                <a href="https://www.instagram.com/preet_tangledart/" target="_blank" rel="noopener noreferrer">
+                                    <FiInstagram className="w-6 h-6 cursor-pointer" />
+                                </a>
+                                <a href="https://www.youtube.com/@preet_tangledart483" target="_blank" rel="noopener noreferrer">
+                                    <FiYoutube className="w-6 h-6 cursor-pointer" />
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">Oslo</div>
-                            <div className="num">09</div>
-                            <img src="https://media.istockphoto.com/id/184316397/it/foto/londra-edifici-aziendali.jpg?s=612x612&w=0&k=20&c=XqrRxEPzFnwRFk7PQrCiu9-FPfCTPyMe5BKKaxYXCs8=" />
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="carousel-box">
-                            <div className="title">London</div>
-                            <div className="num">10</div>
-                            <img src="https://media.istockphoto.com/id/184619832/it/foto/distretto-finanziario-al-crepuscolo-londra.jpg?s=612x612&w=0&k=20&c=RAThrJOBY6vhlT6-kQpu9-9jLEzWToYfdw46S8B0Mu0=" />
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
 
