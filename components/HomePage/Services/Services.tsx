@@ -44,29 +44,30 @@ const serviceData: ServiceData[] = [
   {
     id: 3,
     icon: MdSecurity,
-    title: "Digital Intellectual Properties",
+    title: "Digital IPs",
     description: [
-      "Protect and monetize your creative assets with our IP development and management services. We provide content licensing, brand protection, and strategic monetization frameworks tailored to the digital economy.",
+      "Original edutainment content and course IPs built for licensing to education platforms.",
     ],
     items: [
-      "IP development",
-      "Content licensing",
-      "Brand protection",
-      "Monetization strategies"
+      "IP Creation",
+      "Platform Licensing",
+      "Content Ownership Clarity",
+      "Revenue-Led Distribution",
+      
     ]
   },
   {
     id: 4,
     icon: MdVideoLibrary,
-    title: "End to End Content Production",
+    title: "End to End Edutainment Content Production",
     description: [
-      "Professional content production services from concept to distribution. Our team handles video production, photography, post-production, and multi-platform distribution to ensure your content stands out.",
+      "From topic research to final delivery, every asset is built for accuracy, scalability, and long-term digital IP value.",
     ],
     items: [
-      "Video production",
-      "Photography",
-      "Post-production",
-      "Distribution"
+      "AI Avtar Production",
+      "Model Led Production",
+      "Creator Led Production",
+      "Animation Production"
     ]
   },
 ];

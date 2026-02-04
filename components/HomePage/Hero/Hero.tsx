@@ -344,11 +344,11 @@ const Hero = () => {
                     variants={containerVariants}
                 >
 
-                    <motion.div className='w-full lg:w-[70%] px-4 sm:px-6 md:px-8 lg:pl-[5%]' variants={textVariants}>
+                    <motion.div className='w-full lg:w-[100%] px-4 sm:px-6 md:px-8 lg:pl-[5%]' variants={textVariants}>
 
                         <div>
                             <motion.div
-                                className='text-3xl sm:text-4xl md:text-5xl lg:text-[75px] font-semibold leading-tight text-center lg:text-left'
+                                className='text-3xl sm:text-4xl md:text-5xl lg:text-[72px] font-semibold leading-tight text-center lg:text-left'
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.8, ease: 'easeOut' }}
@@ -358,7 +358,7 @@ const Hero = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.2, duration: 0.6 }}
                                 >
-                                    India&apos;s Largest
+                                    Leading Edutainment
                                 </motion.span>{' '}
                                 <motion.span
                                     className='text-[#FF4D00]'
@@ -366,14 +366,14 @@ const Hero = () => {
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ delay: 0.4, duration: 0.6, type: 'spring' }}
                                 >
-                                    Creator
+                                    Digital IP & Content
                                 </motion.span>{' '}
                                 <motion.span
                                     initial={{ opacity: 0, y: 20 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.6, duration: 0.6 }}
                                 >
-                                    Management Ecosystem
+                                    Production Ecosystem
                                 </motion.span>
                             </motion.div>
 
@@ -383,7 +383,7 @@ const Hero = () => {
                                 transition={{ delay: 0.8, duration: 0.6 }}
                                 className='pt-4 sm:pt-6 lg:pt-8 text-sm sm:text-base md:text-lg lg:text-[25px] text-[#D7C9C3] text-center lg:text-left'
                             >
-                                Empowering creators with <span className='text-white'>structure, strategy, and scale</span>. We build long-term creator businesses, not just campaigns. Because influence deserves enterprise-level growth.
+                                We partner with creators and platforms to produce education-led digital content through structured production workflows and long-term IP development.
                             </motion.p>
                         </div>
                     </motion.div>
@@ -528,11 +528,11 @@ const Hero = () => {
                     </motion.div>
                 </div>
 
-                  {/* brand section */}
+                {/* brand section */}
 
 
 
-            {/* <div className='px-4 sm:px-6 md:px-8 lg:px-[5%] py-6 sm:py-8'>
+                {/* <div className='px-4 sm:px-6 md:px-8 lg:px-[5%] py-6 sm:py-8'>
                 <div className='border border-[#BD3900] rounded-full w-full h-[80px] sm:h-[100px] lg:h-[125px] overflow-hidden relative'>
                     <Marquee className='h-full'>
                         <div className='w-[180px] sm:w-[220px] lg:w-[269px] h-[55px] sm:h-[70px] lg:h-[83px] rounded-[51px] bg-[#0000005E] flex items-center justify-center shrink-0'>
@@ -563,7 +563,7 @@ const Hero = () => {
 
 
 
-          
+
 
             <style jsx>{`
                 .perspective-container {
