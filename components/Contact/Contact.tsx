@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiMail, FiPhone, FiMapPin, FiSend, FiUser, FiCheck } from 'react-icons/fi';
+import { FiMail, FiPhone, FiMapPin, FiSend, FiUser, FiCheck, FiInstagram, FiLinkedin, FiYoutube } from 'react-icons/fi';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -196,6 +196,26 @@ const ContactInfoCard = () => {
     }
   ];
 
+
+
+  const socialLinks = [
+    {
+      icon: <FiInstagram size={24} />,
+      label: 'Instagram',
+      link: 'https://www.instagram.com/flufex_connect'
+    },
+    {
+      icon: <FiLinkedin size={24} />,
+      label: 'LinkedIn',
+      link: 'https://www.linkedin.com/company/flufex-connect'
+    },
+    {
+      icon: <FiYoutube size={24} />,
+      label: 'YouTube',
+      link: 'https://www.youtube.com/@flufexconnect'
+    }
+  ];
+
   return (
     <div className="bg-linear-to-br from-white/8 to-white/2 backdrop-blur-sm border border-white/10 rounded-[3rem] p-10 space-y-8">
       <div className="space-y-4">
@@ -243,14 +263,18 @@ const ContactInfoCard = () => {
           Follow Us
         </p>
         <div className="flex gap-3">
-          {['Instagram', 'LinkedIn', 'Twitter', 'YouTube'].map((social) => (
-            <motion.button
-              key={social}
+          {socialLinks.map((social) => (
+            <motion.a
+              key={social.label}
               whileHover={{ y: -4 }}
+              whileTap={{ scale: 0.95 }}
               className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#FF6E1F] hover:text-white hover:border-[#FF6E1F] transition-all duration-300"
+              href={social.link}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              {social[0]}
-            </motion.button>
+              {social.icon}
+            </motion.a>
           ))}
         </div>
       </div>
