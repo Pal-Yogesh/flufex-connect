@@ -203,44 +203,44 @@ export default function Navbar({}: NavbarProps) {
         <div className="menu-overlay__bg-container" aria-hidden="true">
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-1.webp" 
+              src="https://media.istockphoto.com/id/1371081916/photo/content-wording-on-wooden-cubes-with-speech-bubbles.webp?a=1&b=1&s=612x612&w=0&k=20&c=pAEr9H-PmN4dtQ6TJ9ad3Lhb5HAH1bwVyhfKgPEjkSs=" 
               data-bg-for="default" 
-              alt="Menu background" 
+              alt="Background" 
             />
           </div>
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-2.webp" 
+              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1920&auto=format&fit=crop" 
               data-bg-for="home" 
-              alt="Home background" 
+              alt="Home" 
             />
           </div>
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-3.webp" 
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1920&auto=format&fit=crop" 
               data-bg-for="about" 
-              alt="About background" 
+              alt="About Us" 
             />
           </div>
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-4.webp" 
-              data-bg-for="explore" 
-              alt="Explore background" 
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1920&auto=format&fit=crop" 
+              data-bg-for="work" 
+              alt="Our Work" 
             />
           </div>
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-5.webp" 
-              data-bg-for="services" 
-              alt="Services background" 
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1920&auto=format&fit=crop" 
+              data-bg-for="creators" 
+              alt="Creators" 
             />
           </div>
           <div className="menu-overlay__bg-img">
             <img 
-              src="https://ik.imagekit.io/kg2nszxjp/travel-menu/bg-6.webp" 
+              src="https://images.unsplash.com/photo-1740560051533-3acef26ace95?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29udGFjdCUyMHVzfGVufDB8fDB8fHww" 
               data-bg-for="contact" 
-              alt="Contact background" 
+              alt="Contact Us" 
             />
           </div>
         </div>
@@ -256,8 +256,11 @@ export default function Navbar({}: NavbarProps) {
                   <a href="/about" data-text-anim>ABOUT US</a>
                 </li>
                 <li>
-                  <a href="/" data-text-anim>SERVICES</a>
+                  <a href="/work" data-text-anim>WORK</a>
                 </li>
+                {/* <li>
+                  <a href="/" data-text-anim>SERVICES</a>
+                </li> */}
                 <li>
                   <a href="/creators" data-text-anim>CREATORS</a>
                 </li>
