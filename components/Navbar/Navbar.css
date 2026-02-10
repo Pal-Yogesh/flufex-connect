@@ -20,13 +20,18 @@ a {
   letter-spacing: -0.36px;
   overflow-x: hidden;
 } */
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
 
-.container {
+.navbar-container {
   position: relative;
 }
 
 .wrapper {
   max-width: 1440px;
+  width: 100%;
   padding-inline: 2rem;
   margin-inline: auto;
 }
@@ -35,6 +40,7 @@ a {
   position: fixed;
   top: 18px;
   width: 100%;
+  left: 0;
   z-index: 9999;
 }
 

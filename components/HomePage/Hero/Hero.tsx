@@ -345,7 +345,7 @@ const Hero = () => {
                     variants={containerVariants}
                 >
 
-                    <motion.div className='w-full lg:w-[100%] px-4 sm:px-6 md:px-8 lg:pl-[5%]' variants={textVariants}>
+                    <motion.div className='w-full lg:w-[100%] pt-12 sm:pt-0 px-4 sm:px-6 md:px-8 lg:pl-[5%]' variants={textVariants}>
 
                         <div>
                             <motion.div
@@ -498,7 +498,7 @@ const Hero = () => {
                     </div>
                 </motion.div>
 
-                <div className='px-4 sm:px-6 md:px-8 lg:pl-[5%] flex justify-center lg:justify-start'>
+                <div className='hidden md:block px-4 sm:px-6 md:px-8 lg:pl-[5%]  justify-center lg:justify-start'>
 
                     <motion.div
                         className="flex items-center gap-4"
