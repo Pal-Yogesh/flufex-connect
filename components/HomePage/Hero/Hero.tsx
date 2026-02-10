@@ -197,6 +197,7 @@ import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
+import Link from 'next/link'
 
 // Marquee Component
 const Marquee = ({ children, className }: { children: React.ReactNode; className?: string }) => {
@@ -505,8 +506,9 @@ const Hero = () => {
                         animate="visible"
                         variants={containerVariants}
                     >
+                        <Link href="/contact">
                         <motion.button
-                            className="bg-[#FF4D00] text-white px-6 sm:px-8 lg:px-10 py-3 mt-10 sm:mt-0 sm:py-3.5 lg:py-4 border border-[#FFFFFF] rounded-[63px] font-semibold text-sm sm:text-base lg:text-[20px] transition-colors shadow-lg shadow-[#FF6E1F]/20 flex items-center gap-2 sm:gap-3"
+                            className="bg-[#FF4D00] cursor-pointer text-white px-6 sm:px-8 lg:px-10 py-3 mt-10 sm:mt-0 sm:py-3.5 lg:py-4 border border-[#FFFFFF] rounded-[63px] font-semibold text-sm sm:text-base lg:text-[20px] transition-colors shadow-lg shadow-[#FF6E1F]/20 flex items-center gap-2 sm:gap-3"
                             variants={buttonVariants}
                             whileHover="hover"
                             whileTap="tap"
@@ -525,6 +527,7 @@ const Hero = () => {
                                 <path d="M9 18L15 12L9 6" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                             </motion.svg>
                         </motion.button>
+                        </Link>
                     </motion.div>
                 </div>
 

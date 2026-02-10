@@ -7,28 +7,22 @@ import { gsap } from "gsap";
 const collabData = [
   {
     id: 1,
-    img: "/apple.svg",
+    img: "https://res.cloudinary.com/dopgj4ipn/image/upload/v1760595418/Seekho-logo_w7egp3.png",
   },
   {
     id: 2,
-    img: "/apple.svg",
+    img: "/creators/arivu.jpeg",
   },
   {
     id: 3,
-    img: "/apple.svg",
+    img: "/creators/superlearn2.webp",
   },
   {
     id: 4,
-    img: "/apple.svg",
+    img: "/creators/seekhojunior.png",
   },
-  {
-    id: 5,
-    img: "/apple.svg",
-  },
-  {
-    id: 6,
-    img: "/apple.svg",
-  },
+
+
 ];
 
 const stats = [

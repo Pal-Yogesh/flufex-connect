@@ -214,7 +214,7 @@ const Testimonials = () => {
                 >
                   <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl md:rounded-4xl lg:rounded-[3rem] p-6 sm:p-8 md:p-12 lg:p-14 xl:p-16">
                     {/* Quote Icon */}
-                    <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl md:rounded-2xl bg-[#FF6E1F] flex items-center justify-center text-3xl sm:text-4xl md:text-5xl text-white shadow-xl shadow-[#FF6E1F]/30">
+                    <div className="absolute -top-3 -left-3 sm:-top-4 sm:-left-4 md:-top-6 md:-left-6 w-10 h-10 sm:w-16 sm:h-16  rounded-xl md:rounded-2xl bg-[#FF6E1F] flex items-center justify-center text-3xl sm:text-4xl md:text-5xl text-white shadow-xl shadow-[#FF6E1F]/30">
                       "
                     </div>
 

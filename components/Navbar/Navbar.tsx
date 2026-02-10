@@ -6,6 +6,7 @@ import gsap from 'gsap';
 // Import CSS (you can use CSS Modules or Tailwind instead)
 import './Navbar.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface NavbarProps {
   // You can add props here if needed
@@ -285,13 +286,15 @@ export default function Navbar({}: NavbarProps) {
         <nav className="wrapper">
           <div className="menu-bar">
             <div className="logo-wrapper">
+              <Link href="/">
               <Image 
                 src="/logo2.JPEG" 
                 alt="Logo" 
                 width={1000}
                 height={1000}
                 className='w-[80px] h-[60px] object-cover'
-              />
+                />
+                </Link>
             </div>
             <div 
               className="navbar__menu" 
