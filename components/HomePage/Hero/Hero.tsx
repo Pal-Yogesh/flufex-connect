@@ -397,7 +397,7 @@ const Hero = () => {
 
                                 <div ref={(el) => { imagesRef.current[0] = el; }} className='image-wrapper'>
                                     <Image
-                                        src="/hero/Rectangle 30.svg"
+                                        src="/creators/hero/Rectangle 30.svg"
                                         alt="Creator"
                                         width={1000}
                                         height={1000}
@@ -407,7 +407,7 @@ const Hero = () => {
                                 </div>
                                 <div ref={(el) => { imagesRef.current[1] = el; }} className='image-wrapper'>
                                     <Image
-                                        src="/hero/Rectangle 27.svg"
+                                        src="/creators/hero/Rectangle 27.svg"
                                         alt="Creator"
                                         width={1000}
                                         height={1000}
@@ -421,7 +421,7 @@ const Hero = () => {
 
                                 <div ref={(el) => { imagesRef.current[2] = el; }} className='image-wrapper'>
                                     <Image
-                                        src="/hero/Rectangle 29.svg"
+                                        src="/creators/hero/Rectangle 29.svg"
                                         alt="Creator"
                                         width={1000}
                                         height={1000}
@@ -431,7 +431,7 @@ const Hero = () => {
                                 </div>
                                 <div ref={(el) => { imagesRef.current[3] = el; }} className='image-wrapper'>
                                     <Image
-                                        src="/hero/Rectangle 26.svg"
+                                        src="/creators/hero/Rectangle 26.svg"
                                         alt="Creator"
                                         width={1000}
                                         height={1000}
@@ -442,7 +442,7 @@ const Hero = () => {
                             </div>
                             <div ref={(el) => { imagesRef.current[4] = el; }} className='image-wrapper'>
                                 <Image
-                                    src="/hero/Rectangle 28.svg"
+                                    src="/creators/hero/Rectangle 28.svg"
                                     alt="Creator"
                                     width={1000}
                                     height={1000}
@@ -457,7 +457,7 @@ const Hero = () => {
                     <div className='lg:hidden grid grid-cols-2 gap-3 sm:gap-4 px-4 sm:px-6 md:px-8 w-full max-w-2xl mx-auto'>
                         <div className='rounded-lg overflow-hidden'>
                             <Image
-                                src="/hero/Rectangle 30.svg"
+                                src="/creators/hero/Rectangle 30.svg"
                                 alt="Creator"
                                 width={1000}
                                 height={1000}
@@ -467,7 +467,7 @@ const Hero = () => {
                         </div>
                         <div className='rounded-lg overflow-hidden'>
                             <Image
-                                src="/hero/Rectangle 29.svg"
+                                src="/creators/hero/Rectangle 29.svg"
                                 alt="Creator"
                                 width={1000}
                                 height={1000}
@@ -477,7 +477,7 @@ const Hero = () => {
                         </div>
                         <div className='rounded-lg overflow-hidden'>
                             <Image
-                                src="/hero/Rectangle 26.svg"
+                                src="/creators/hero/Rectangle 26.svg"
                                 alt="Creator"
                                 width={1000}
                                 height={1000}
@@ -487,7 +487,7 @@ const Hero = () => {
                         </div>
                         <div className='rounded-lg overflow-hidden'>
                             <Image
-                                src="/hero/Rectangle 28.svg"
+                                src="/creators/hero/Rectangle 28.svg"
                                 alt="Creator"
                                 width={1000}
                                 height={1000}
