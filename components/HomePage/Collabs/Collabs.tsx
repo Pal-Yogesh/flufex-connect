@@ -15,7 +15,7 @@ const collabData = [
   },
   {
     id: 3,
-    img: "/creators/superlearn2.webp",
+    img: "/creators/download.jpeg",
   },
   {
     id: 4,
@@ -28,12 +28,12 @@ const collabData = [
 const stats = [
   {
     value: '3000+',
-    label: 'content delivered to entertainment',
+    label: 'Content delivered to Edutainment Apps',
     highlighted: false
   },
   {
-    value: '120+',
-    label: 'creators managed and scaled',
+    value: '100+',
+    label: 'Creators Worked with us',
     highlighted: true
   }
 ];
@@ -143,9 +143,9 @@ const Collabs = () => {
                   <Image
                     src={collab.img}
                     alt={`Collab ${collab.id.toString()}`}
-                    width={300}
-                    height={300}
-                    className="w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] lg:w-[300px] lg:h-[300px] object-contain"
+                    width={200}
+                    height={200}
+                    className="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] rounded-2xl object-cover"
                     quality={100}
                   />
                 </div>

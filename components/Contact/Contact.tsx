@@ -133,11 +133,10 @@ const ContactForm = () => {
         </label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {[
-            'Influencer Marketing',
             'Talent Management',
-            'Video Production',
+            'Influencer Marketing',
             'End to end talent management',
-            'Others'
+            "Digital IP's"
           ].map((service) => (
             <button
               key={service}

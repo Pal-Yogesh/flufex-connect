@@ -178,18 +178,22 @@ export default function ServicesWheel() {
                 <div className="text-start">
                   <div className="space-y-2 ">
                     {/* Services Badge */}
-                    <div className="flex justify-start">
+                    <div className="flex  gap-10">
                       <div className="inline-flex items-center gap-2 bg-[#FF6E1F] text-white px-6 py-2 rounded-full border-2 border-white/20 shadow-2xl text-lg font-semibold">
                         <Flower />
                         Services
                       </div>
+                       <h2 className="text-5xl font-bold leading-tight">
+                      <span className="text-white">What do we </span>
+                      <span className="text-[#FF6E1F]">offer?</span>
+                    </h2> 
                     </div>
                     
                     {/* Title */}
-                    <h2 className="text-5xl font-bold leading-tight">
+                    {/* <h2 className="text-5xl font-bold leading-tight">
                       <span className="text-white">What do we </span>
                       <span className="text-[#FF6E1F]">offer?</span>
-                    </h2>
+                    </h2> */}
                   </div>
                 </div>
 
@@ -203,7 +207,7 @@ export default function ServicesWheel() {
                     scale: hasStarted ? 1 : 0.95,
                   }}
                   transition={{ duration: 0.6, ease: [0.34, 1.56, 0.64, 1] }}
-                  className="xl:w-[700px] w-[600px]"
+                  className="xl:w-[700px] w-[600px] pt-5"
                 >
                   <div
                     className="relative p-10 rounded-2xl transition-all duration-500 overflow-hidden bg-gradient-to-br from-[#2A2A2A] to-[#1F1F1F] text-gray-300 border-2 border-[#FF6E1F]/50 shadow-[0_20px_40px_rgba(0,0,0,0.3)]"

@@ -49,7 +49,7 @@ export default function Footer() {
              <Image src="/logo.JPEG" alt="Flufex" width={60} height={60} className="rounded-full"/>
             </a>
             <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
-              Digital marketing solutions for brands that want to make an impact.
+              Content Production & Influencer Marketing for brands that want to make an impact
             </p>
             <div className="flex gap-4 mt-6">
               {socialLinks.map((social) => (
@@ -89,7 +89,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-col gap-1">
               <div className="text-sm text-muted-foreground">
-                © {new Date().getFullYear()} BRIDGEIT MARKETING PVT. LTD. All rights reserved.
+                © {new Date().getFullYear()} Flufex Connect. All rights reserved.
               </div>
             </div>
             <div className="text-xs text-muted-foreground hidden lg:block">MCA Registered</div>
